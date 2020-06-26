@@ -3,6 +3,7 @@ Seed2Cor
 /bin
 test_*/
 .python-version
+*.swp
 
 #
 # From gitignore
