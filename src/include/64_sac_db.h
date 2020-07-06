@@ -37,7 +37,7 @@ RECORD;
 
 #define NSTATION 2000
 #define NEVENTS 31
-#define NMONTH 100
+#define NMONTH 250
 
 typedef struct sac_dbase
 {
