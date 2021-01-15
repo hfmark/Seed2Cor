@@ -239,7 +239,7 @@ TransferEvr(int ne, int ns, float ** sig, SAC_HD * sd, int ithread)
     sscanf(sd->kcmpnm, "%s", ch);
     // std::cerr<<"channel from sacheader: "<<ch<<std::endl;
     sscanf(sd->knetwk, "%s", net);
-    sprintf(buff, "%s %s %s %4d %3d %f %f %d -f %s -v >& /dev/null", evrexe, sta, ch, sd->nzyear, sd->nzjday, f1, f4,
+    sprintf(buff, "%s %s %s %4d %3d %f %f %d -f %s -u dis -v >& /dev/null", evrexe, sta, ch, sd->nzyear, sd->nzjday, f1, f4,
       nf, sdb->rec[ne][ns].resp_fname);
     pthread_mutex_lock(&evrlock); // lock
     system(buff);
